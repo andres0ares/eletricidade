@@ -2,19 +2,22 @@
   <v-container>
     <h1>Eletricidade</h1>
     <ConvertMulti class="ma-2"/>
-    <SigmaCl class="ma-2"/>
+    <RlcEmSerie class="ma-2"/>
+    <RlcEmParalelo class="ma-2"/>
   </v-container>
 </template>
 
 <script>
 import ConvertMulti from './ConvertMulti.vue';
-import SigmaCl from './SigmaCl.vue';
+import RlcEmSerie from './RlcEmSerie.vue';
+import RlcEmParalelo from './RlcEmParalelo';
 
 export default {
   name: 'HomeMain',
   components: {
     ConvertMulti,
-    SigmaCl,
+    RlcEmSerie,
+    RlcEmParalelo,
   },
   data: () => ({
    lar: "home",
